@@ -7,6 +7,7 @@
     <meta name="title" content="Título de la WEB" />
     <meta name="description" content="Descripción de la WEB" />
     <link href="./test.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/funciones.js"></script>
 </head>
 
 <body>
@@ -16,13 +17,13 @@
         <br><br>
     </header>
     <nav>
-        <a href="http://dominio.com/seccion2.html">IR SECCIÓN 2</a>
+        <a href="#" onclick="myFunction1()">IR SECCIÓN 2</a>
         <a href="http://dominio.com/seccion2.html">IR SECCIÓN 3</a>
     </nav>
     <section>
         <br>
         <h2>CONTENIDO PRINCIPAL</h2>
-        <br>
+        <p style="text-align: center;" id="datos"></p>
         <article style="background-color: #fadab3;">
             <article style="background: #9cdae2;">
                 <br>
@@ -31,7 +32,7 @@
             </article>
             <article style="background: #115553; text-align: center;">
                 <div>
-                    <p style="text-align: center;">Aquí tenéis una imagen.</p>
+                    <p id="texto" style="text-align: center;"></p>
                     <br>
                     <img src="catarata.jpg" width="auto" height="200" alt="paisaje" />
                     <br>
@@ -44,8 +45,10 @@
         <a id="anuncio2">
             <img src="ofertas.jpeg" width="200" height="70" alt="banner de publicidad" />
         </a>
-        <h3 id="anuncio1">Testimonios</h3>
-        <p style="text-align: center;">Me gusta mucho esta página.</p>
+        <h3 id="anuncio1">Testimonios
+            <button onclick="myFunction()">Ver</button>
+        </h3>
+        <p style="text-align: center;" id="demo"></p>
         <br><br><br><br><br>
     </aside>
     <footer>
